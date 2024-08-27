@@ -1,0 +1,328 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fonte padrão e estilo de corpo */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header .cta-button {
+    background: #963131;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Seção Hero */
+.hero {
+    background: url('original-81d6f4c9f494c6035a0e419cd8c140a3.jpg') no-repeat center center/cover;
+    color: #000;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.hero .cta-button {
+    background: #963131;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.hero #welcome-button {
+    margin-top: 15px;
+}
+
+/* Seção Sobre */
+.sobre {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.sobre h2 {
+    margin-bottom: 20px;
+}
+
+.sobre .bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sobre .bio img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.sobre p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Seção Serviços */
+.serviços {
+    background: #963131;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.serviços h2 {
+    margin-bottom: 20px;
+}
+
+.serviços ul {
+    list-style: none;
+}
+
+.serviços ul li {
+    margin: 20px 0;
+}
+
+/* Seção Depoimentos */
+.depoimentos {
+    padding: 50px 0;
+}
+
+.depoimentos h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.depoimentos .testemunhos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.depoimentos .testemunho {
+    background: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.depoimentos .testemunho cite {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* Seção Contato */
+.contato {
+    padding: 50px 0;
+}
+
+.contato h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contato form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.contato form input,
+.contato form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.contato form .cta-button {
+    background: #963131;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Rodapé */
+footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer .social-media a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* Media para dispositivos móveis */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    header nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .sobre .bio {
+        flex-direction: column;
+    }
+
+    .sobre .bio img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .contato form {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo h1 {
+        font-size: 20px;
+    }
+
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .hero .cta-button {
+        padding: 12px 24px;
+    }
+
+    .sobre .bio img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .serviços ul li {
+        margin: 10px 0;
+    }
+
+    .depoimentos .testemunho {
+        padding: 15px;
+    }
+
+    .contato form {
+        padding: 0 10px;
+    }
+
+    .contato form .cta-button {
+        padding: 12px 15px;
+    }
+}
